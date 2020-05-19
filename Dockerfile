@@ -15,6 +15,8 @@ RUN apt-get update && \
     python \
     python3-dev \
     python-dev \
+    protobuf-compiler \
+    perl \
 # Development files
       build-essential \
       git \
