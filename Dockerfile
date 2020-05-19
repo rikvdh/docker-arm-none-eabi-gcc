@@ -17,6 +17,8 @@ RUN apt-get update && \
     python-dev \
     protobuf-compiler \
     perl \
+    clang-tools \
+    clang \
 # Development files
       build-essential \
       git \
