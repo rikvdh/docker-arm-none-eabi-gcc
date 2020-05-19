@@ -9,16 +9,17 @@ ADD . /work
 RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y \
-    apt-get install cmake -y \
-    apt-get install python3 -y \
-    apt install python3-pip -y\
-    pip3 install python-protobuf \
+    cmake \
+    python3 \
+    python3-pip \
 # Development files
       build-essential \
       git \
       bzip2 \
       wget && \
     apt-get clean
+RUN pip3 install protobuf
+RUN pip3 install protobuf-compiler
 RUN wget -qO- https://developer.arm.com/-/media/Files/downloads/gnu-rm/9-2019q4/gcc-arm-none-eabi-9-2019-q4-major-x86_64-linux.tar.bz2 | tar -xj
 
 ENV PATH "/work/gcc-arm-none-eabi-9-2019-q4-major/bin:$PATH"
