@@ -9,6 +9,10 @@ ADD . /work
 RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y \
+    apt-get install cmake -y \
+    apt-get install python3 -y \
+    apt install python3-pip -y\
+    pip3 install python-protobuf \
 # Development files
       build-essential \
       git \
