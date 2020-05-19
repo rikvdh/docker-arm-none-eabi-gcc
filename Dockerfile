@@ -12,6 +12,7 @@ RUN apt-get update && \
     cmake \
     python3 \
     python3-pip \
+    python \
 # Development files
       build-essential \
       git \
