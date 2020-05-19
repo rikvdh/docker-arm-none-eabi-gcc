@@ -13,6 +13,8 @@ RUN apt-get update && \
     python3 \
     python3-pip \
     python \
+    python3-dev \
+    python-dev \
 # Development files
       build-essential \
       git \
