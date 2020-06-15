@@ -26,6 +26,7 @@ RUN apt-get update && \
     apt-get clean
 RUN pip3 install protobuf
 RUN pip3 install protobuf-compiler
+RUN pip install protobuf
 RUN wget -qO- "https://cmake.org/files/v3.17/cmake-3.17.0-Linux-x86_64.tar.gz" | tar --strip-components=1 -xz -C /usr/local
 RUN wget -qO- "https://developer.arm.com/-/media/Files/downloads/gnu-rm/9-2020q2/gcc-arm-none-eabi-9-2020-q2-update-x86_64-linux.tar.bz2"| tar -xj
 
