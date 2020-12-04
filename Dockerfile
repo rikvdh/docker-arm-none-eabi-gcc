@@ -18,6 +18,7 @@ RUN apt-get update && \
     perl \
     clang-tools \
     clang \
+    srecord \
 # Development files
       build-essential \
       git \
