@@ -17,7 +17,7 @@ RUN apt-get update && \
     protobuf-compiler \
     perl \
     clang-tools \
-    clang
+    clang \
 # Development files
       build-essential \
       git \
