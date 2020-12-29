@@ -1,2 +1,2 @@
 # docker-arm-none-eabi-gcc
-Docker container with ARM Embedded Compiler
+Debian-based docker container with ARM Embedded Compiler
